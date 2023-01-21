@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638098221958140054
-    m_Hash: 2357649487
+      ticks: 638099140764328555
+    m_Hash: 1051959569
   m_LockFileStatus:
     m_FilePath: C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638098221958247625
-    m_Hash: 2210126617
+      ticks: 638099140764347880
+    m_Hash: 4177314884
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
