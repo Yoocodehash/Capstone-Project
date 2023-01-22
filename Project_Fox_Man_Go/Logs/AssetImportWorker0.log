@@ -1,0 +1,225 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.43f1 (75bff06b76bf) revision 7716848'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 16052 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.43f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59442
+Successfully changed project path to: C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go
+C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 77.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.43f1 (75bff06b76bf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   
+    VRAM:     6023 MB
+    Driver:   30.0.15.1278
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.003011 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 100.23 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.821 seconds
+Domain Reload Profiling:
+	ReloadAssembly (822ms)
+		BeginReloadAssembly (89ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (633ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (182ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadAttributes (111ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004427 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 77.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.554 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1555ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (1342ms)
+			LoadAssemblies (124ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (707ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (512ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2393 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 108.2 MB.
+System memory in use after: 108.3 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2836.
+Total: 3.051200 ms (FindLiveObjects: 0.121400 ms CreateObjectMapping: 0.051000 ms MarkObjects: 2.740700 ms  DeleteObjects: 0.137300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/cherry_2.0.fbx
+  artifactKey: Guid(3708953a7730eef4a8ecf19536b505d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/cherry_2.0.fbx using Guid(3708953a7730eef4a8ecf19536b505d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a5bc47c2303cab07448fc8923daea8') in 0.106874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.211545 seconds.
+  path: Assets/Scenes/textures/cherry_texture.png
+  artifactKey: Guid(c5df46c7952116446a12b7d0849f7355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/textures/cherry_texture.png using Guid(c5df46c7952116446a12b7d0849f7355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e53003084b20bb86b8c37e830b53ac') in 0.070483 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000500 seconds.
+  path: Assets/Scenes/textures
+  artifactKey: Guid(28aaf9f617645bd40a40d78c678f92ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/textures using Guid(28aaf9f617645bd40a40d78c678f92ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d640848ae9765f433e811ed2f48252') in 0.008740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 224.584074 seconds.
+  path: Assets/Scenes/Assets_folder
+  artifactKey: Guid(6b722544359142a4184cbf31b8f6cff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder using Guid(6b722544359142a4184cbf31b8f6cff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8164a33ca07bdf1895f3fed0d805749b') in 0.006588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 332.704164 seconds.
+  path: Assets/Scenes/Assets_folder/cherry_2.0.blend
+  artifactKey: Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5473f2c2ac2017861d6c546625ed55') in 0.122107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 130.516482 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets
+  artifactKey: Guid(a7994d59a7d7efe48821b8b602a23a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets using Guid(a7994d59a7d7efe48821b8b602a23a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351046dc3dd30a81364ceea371a09757') in 0.007148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 91.892566 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/cherry_texture.png
+  artifactKey: Guid(0b17c15c9d9c7f2488cc35f60ae03f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_texture.png using Guid(0b17c15c9d9c7f2488cc35f60ae03f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a74a4892280043dc25c6b6b708bbb1e') in 0.027856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 208.514890 seconds.
+  path: Assets/Scenes/Assets_folder/cherry_2.0.blend
+  artifactKey: Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da0398212288c3c592794bea7504dfb') in 0.034923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.148622 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat
+  artifactKey: Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat using Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce4a74210d3333f3f4dc90d9f958ef3') in 0.013586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 277.102866 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_texture.png
+  artifactKey: Guid(a47bcebb1d155b8438edc40eb991e0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_texture.png using Guid(a47bcebb1d155b8438edc40eb991e0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fad6d0babbc01bad2d644bfc18ac0db') in 0.023494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.036929 seconds.
+  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
+  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c3f515a39bef69191e2728eb3d3e63') in 0.191857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.273647 seconds.
+  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
+  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5ef320764707d067cd4c575d15bf56') in 0.155196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.095979 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat
+  artifactKey: Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat using Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d7ce69bb12625db5342d0349d80001') in 0.015232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.587929 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat
+  artifactKey: Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat using Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbaf2c2692b9f9f15817c2d1ac79be25') in 0.018189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat
+  artifactKey: Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat using Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1219a7ce953fc6edaad43e08bdf2be') in 0.019337 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
