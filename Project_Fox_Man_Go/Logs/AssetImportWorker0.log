@@ -15,11 +15,11 @@ C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59442
+61689
 Successfully changed project path to: C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go
 C:/Users/User/Documents/GitHub/Networking_Unity/Capstone-Project/Project_Fox_Man_Go
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 77.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 77.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.43f1 (75bff06b76bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/Resources/UnitySubsystems
@@ -35,92 +35,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56708
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.43f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.003011 seconds.
+Registered in 0.009909 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 100.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 44.75 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.821 seconds
+- Completed reload, in  0.874 seconds
 Domain Reload Profiling:
-	ReloadAssembly (822ms)
-		BeginReloadAssembly (89ms)
+	ReloadAssembly (875ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (633ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (649ms)
+			LoadAssemblies (132ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
+			SetupTypeCache (177ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (271ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (182ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (100ms)
-				BeforeProcessingInitializeOnLoad (18ms)
-				ProcessInitializeOnLoadAttributes (111ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (21ms)
+				ProcessInitializeOnLoadAttributes (83ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004427 seconds.
+Registered in 0.012612 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 53.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.554 seconds
+- Completed reload, in  1.504 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1555ms)
-		BeginReloadAssembly (152ms)
+	ReloadAssembly (1505ms)
+		BeginReloadAssembly (187ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (1342ms)
-			LoadAssemblies (124ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1251ms)
+			LoadAssemblies (151ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (344ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (52ms)
-			SetupLoadedEditorAssemblies (707ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (755ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (77ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (512ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (54ms)
+				BeforeProcessingInitializeOnLoad (92ms)
+				ProcessInitializeOnLoadAttributes (583ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2393 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 108.2 MB.
-System memory in use after: 108.3 MB.
+System memory in use after: 108.4 MB.
 
 Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2836.
-Total: 3.051200 ms (FindLiveObjects: 0.121400 ms CreateObjectMapping: 0.051000 ms MarkObjects: 2.740700 ms  DeleteObjects: 0.137300 ms)
+Total: 3.214400 ms (FindLiveObjects: 0.121500 ms CreateObjectMapping: 0.066900 ms MarkObjects: 2.913200 ms  DeleteObjects: 0.111900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -135,91 +135,91 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/cherry_2.0.fbx
-  artifactKey: Guid(3708953a7730eef4a8ecf19536b505d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/cherry_2.0.fbx using Guid(3708953a7730eef4a8ecf19536b505d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a5bc47c2303cab07448fc8923daea8') in 0.106874 seconds 
+  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
+  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a80fabc942816c880b235be30762f80') in 0.366911 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.211545 seconds.
-  path: Assets/Scenes/textures/cherry_texture.png
-  artifactKey: Guid(c5df46c7952116446a12b7d0849f7355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/textures/cherry_texture.png using Guid(c5df46c7952116446a12b7d0849f7355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e53003084b20bb86b8c37e830b53ac') in 0.070483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000500 seconds.
-  path: Assets/Scenes/textures
-  artifactKey: Guid(28aaf9f617645bd40a40d78c678f92ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/textures using Guid(28aaf9f617645bd40a40d78c678f92ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d640848ae9765f433e811ed2f48252') in 0.008740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 224.584074 seconds.
-  path: Assets/Scenes/Assets_folder
-  artifactKey: Guid(6b722544359142a4184cbf31b8f6cff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder using Guid(6b722544359142a4184cbf31b8f6cff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8164a33ca07bdf1895f3fed0d805749b') in 0.006588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 332.704164 seconds.
+  Time since last request: 0.001119 seconds.
   path: Assets/Scenes/Assets_folder/cherry_2.0.blend
   artifactKey: Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5473f2c2ac2017861d6c546625ed55') in 0.122107 seconds 
+Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869e584645206e45817383e856bfb4f1') in 0.109654 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 130.516482 seconds.
-  path: Assets/Scenes/Assets_folder/Material_assets
-  artifactKey: Guid(a7994d59a7d7efe48821b8b602a23a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets using Guid(a7994d59a7d7efe48821b8b602a23a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '351046dc3dd30a81364ceea371a09757') in 0.007148 seconds 
+  Time since last request: 3.423610 seconds.
+  path: Assets/Scenes/prefab_overhere
+  artifactKey: Guid(99ad3a7ed3e8d2846b2cfb54a325dd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/prefab_overhere using Guid(99ad3a7ed3e8d2846b2cfb54a325dd5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030c2cc6b23446f85ec2e57bb26385b1') in 0.012939 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 91.892566 seconds.
+  Time since last request: 5.784364 seconds.
+  path: Assets/Scenes/cherry_2.0.prefab
+  artifactKey: Guid(7ad27d9ff8bf2bf478874d41610ad031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/cherry_2.0.prefab using Guid(7ad27d9ff8bf2bf478874d41610ad031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa39b427cd17be7d5340fe91c00a6ba') in 0.028586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.420354 seconds.
+  path: Assets/Scenes/Strawberry_backup_uvwrap.prefab
+  artifactKey: Guid(17d467e453cb3374eb4bc48b9ab40d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Strawberry_backup_uvwrap.prefab using Guid(17d467e453cb3374eb4bc48b9ab40d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '034f147be9adce8a6d502ba4c850f3de') in 0.039303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 409.518752 seconds.
+  path: Assets/Scenes/Assets_folder/cherry_2.0.blend
+  artifactKey: Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06bdc78286e8bb24a53599d012f3f5bc') in 0.130708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.504572 seconds.
+  path: Assets/Scenes/Assets_folder/cherry_2.0.blend
+  artifactKey: Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74eafbc3583096e04255e7a90ebf130a') in 0.070929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 137.273423 seconds.
+  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
+  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c3f515a39bef69191e2728eb3d3e63') in 0.324924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.183678 seconds.
+  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
+  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5ef320764707d067cd4c575d15bf56') in 0.207268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.630132 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat
+  artifactKey: Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat using Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d7ce69bb12625db5342d0349d80001') in 0.054714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.461656 seconds.
+  path: Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat
+  artifactKey: Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat using Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b129af23b7443bab5637e2f237c702') in 0.035698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
   path: Assets/Scenes/Assets_folder/Material_assets/cherry_texture.png
   artifactKey: Guid(0b17c15c9d9c7f2488cc35f60ae03f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_texture.png using Guid(0b17c15c9d9c7f2488cc35f60ae03f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a74a4892280043dc25c6b6b708bbb1e') in 0.027856 seconds 
+Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_texture.png using Guid(0b17c15c9d9c7f2488cc35f60ae03f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e27dd71e700373ba0c4fb913f2d0d92') in 0.054095 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 208.514890 seconds.
-  path: Assets/Scenes/Assets_folder/cherry_2.0.blend
-  artifactKey: Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/cherry_2.0.blend using Guid(6e350b94ff0ba114f8cc56c1a6384d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da0398212288c3c592794bea7504dfb') in 0.034923 seconds 
+  Time since last request: 72.594917 seconds.
+  path: Assets/Scenes/prefab_overhere/Strawberry_backup_uvwrap.prefab
+  artifactKey: Guid(17d467e453cb3374eb4bc48b9ab40d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/prefab_overhere/Strawberry_backup_uvwrap.prefab using Guid(17d467e453cb3374eb4bc48b9ab40d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff18faa29a7398091e85a00efb0e681') in 0.033716 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.148622 seconds.
-  path: Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat
-  artifactKey: Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat using Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fce4a74210d3333f3f4dc90d9f958ef3') in 0.013586 seconds 
+  Time since last request: 4.355967 seconds.
+  path: Assets/Scenes/prefab_overhere/cherry_2.0.prefab
+  artifactKey: Guid(7ad27d9ff8bf2bf478874d41610ad031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/prefab_overhere/cherry_2.0.prefab using Guid(7ad27d9ff8bf2bf478874d41610ad031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b170572d0468dfdaf41a30d9f32d12b') in 0.026814 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 277.102866 seconds.
-  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_texture.png
-  artifactKey: Guid(a47bcebb1d155b8438edc40eb991e0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_texture.png using Guid(a47bcebb1d155b8438edc40eb991e0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fad6d0babbc01bad2d644bfc18ac0db') in 0.023494 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.036929 seconds.
-  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
-  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5c3f515a39bef69191e2728eb3d3e63') in 0.191857 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.273647 seconds.
-  path: Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend
-  artifactKey: Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Strawberry_backup_uvwrap.blend using Guid(c801e4acd4cc64c46a1692e602fa47f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b5ef320764707d067cd4c575d15bf56') in 0.155196 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.095979 seconds.
-  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat
-  artifactKey: Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat using Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d7ce69bb12625db5342d0349d80001') in 0.015232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.587929 seconds.
-  path: Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat
-  artifactKey: Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets/cherry_material.mat using Guid(6883de07908daf14e9900369053850e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbaf2c2692b9f9f15817c2d1ac79be25') in 0.018189 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat
-  artifactKey: Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Assets_folder/Material_assets/strawberry_material.mat using Guid(d98f4465a98217a4db153914e1bcf569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1219a7ce953fc6edaad43e08bdf2be') in 0.019337 seconds 
+  Time since last request: 94.945527 seconds.
+  path: Assets/Scenes/prefab_overhere/Strawberry_backup_uvwrap.prefab
+  artifactKey: Guid(17d467e453cb3374eb4bc48b9ab40d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/prefab_overhere/Strawberry_backup_uvwrap.prefab using Guid(17d467e453cb3374eb4bc48b9ab40d46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6b0e27f1fe217b574346a5952c0339') in 0.069442 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
