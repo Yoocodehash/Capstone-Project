@@ -20,6 +20,7 @@ public class StrawberryCollection : MonoBehaviour
             Debug.Log("Strawberry Collected");
             strawberries = strawberries + 1;
             Strawberry.gameObject.SetActive(false);
+            //Destroy(Strawberry.gameObject);
         }
     }
 
