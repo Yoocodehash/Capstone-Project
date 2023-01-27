@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(CharacterController),typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
     private CharacterController characterController;
     private Animator animator;
+
+    public Transform orientation;
 
     [SerializeField]
     private float movementSpeed, rotationSpeed, jumpSpeed, gravity;
@@ -34,12 +37,15 @@ public class PlayerController : MonoBehaviour
         {
             movementDirection.y = jumpSpeed;
         }
-        movementDirection.y -= gravity * Time.deltaTime;
+        // movementDirection.y -= gravity * Time.deltaTime;
+
+        movementDirection = orientation.forward  + orientation.right ;
+
 
         characterController.Move(movementDirection * Time.deltaTime);
 
         //animations
-        animator.SetBool("IsRunning", Input.GetAxisRaw("Vertical") != 0);
-        animator.SetBool("IsJumping", !characterController.isGrounded);
+        animator.SetBool("isRunning", Input.GetAxisRaw("Vertical") != 0);
+        animator.SetBool("isJumping", !characterController.isGrounded);
     }
 }
