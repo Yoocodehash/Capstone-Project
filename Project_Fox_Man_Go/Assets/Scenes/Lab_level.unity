@@ -650,7 +650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 398480912}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.6, y: -145.06, z: -525.15}
+  m_LocalPosition: {x: -58.6, y: -145.081, z: -525.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1526540024}
@@ -780,7 +780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8271038712761876903, guid: efbfcb3fd590b454d9030508cf37d93a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -134.99603
+      value: -135.01703
       objectReference: {fileID: 0}
     - target: {fileID: 8271038712761876903, guid: efbfcb3fd590b454d9030508cf37d93a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3624,9 +3624,9 @@ Transform:
   - {fileID: 972923033}
   - {fileID: 1626634748}
   - {fileID: 929865529}
+  - {fileID: 2065739068}
   - {fileID: 1123148406}
   - {fileID: 1283858530}
-  - {fileID: 2065739068}
   - {fileID: 918377221}
   - {fileID: 74915600}
   - {fileID: 2035053698}
@@ -3905,7 +3905,7 @@ Transform:
   m_LocalScale: {x: 0.004744789, y: 8.292212, z: 32.91521}
   m_Children: []
   m_Father: {fileID: 2013234276}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!64 &2065739069
 MeshCollider:
@@ -4203,7 +4203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1171760747192875101, guid: 5dbad306f32fbb64480d262bf75d13c8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -147.56
+      value: -147.581
       objectReference: {fileID: 0}
     - target: {fileID: 1171760747192875101, guid: 5dbad306f32fbb64480d262bf75d13c8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4258,7 +4258,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6838545526249971665}
     m_RemovedComponents:
-    - {fileID: 3139669054343754577, guid: 5dbad306f32fbb64480d262bf75d13c8, type: 3}
+    - {fileID: 5667088384973551001, guid: 5dbad306f32fbb64480d262bf75d13c8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5dbad306f32fbb64480d262bf75d13c8, type: 3}
 --- !u!4 &6838545526249971665 stripped
 Transform:
