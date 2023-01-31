@@ -9,14 +9,16 @@ public class AnimationAndMovementController : MonoBehaviour
     CharacterController characterController;
     private Animator animator;
 
+    int isWalkingHash;
     int isRunningHash;
-   // int isJumpingHash;
 
     Vector2 currentMovementInput;
     Vector3 currentMovement;
+    Vector3 currentRunMovement;
     bool isMovementPressed;
-   // bool isRunPressed; //depend is game slow add dash
+    bool isRunPressed; //depend is game slow add dash
     float rotationFactorPerframe = 15.0f;
+    float runMultiplier = 3.0f;
 
     void Awake()
     {
@@ -24,19 +26,20 @@ public class AnimationAndMovementController : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
 
+        isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
-        //isJumpingHash = Animator.StringToHash("isJumping");
 
         gamepads.CharacterControls.Move.started += onMovementInput;
         gamepads.CharacterControls.Move.canceled += onMovementInput;
         gamepads.CharacterControls.Move.performed += onMovementInput;
-        //gamepads.CharacterControls.Run.started += onRun;
+        gamepads.CharacterControls.Run.started += onRun;
+        gamepads.CharacterControls.Run.canceled += onRun;
     }
 
-   // void onRun (InputAction.CallbackContext context)
-   // {
-   //     isRunPressed = context.ReadValueAsButton();
-  //  }
+    void onRun (InputAction.CallbackContext context)
+     {
+         isRunPressed = context.ReadValueAsButton();
+     }
 
     void handleRotation()
     {
@@ -47,8 +50,6 @@ public class AnimationAndMovementController : MonoBehaviour
         positionToLookAt.z = currentMovement.z;
 
         Quaternion currentRotation = transform.rotation;
-
-       
 
         if (isMovementPressed)
         {
@@ -62,22 +63,34 @@ public class AnimationAndMovementController : MonoBehaviour
         currentMovementInput = context.ReadValue<Vector2>();
         currentMovement.x = currentMovementInput.x;
         currentMovement.z = currentMovementInput.y;
+        currentMovement.x = currentMovementInput.x = runMultiplier;
+        currentMovement.y = currentMovementInput.y = runMultiplier;
         isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
     }
 
     void handleAnimation()
     {
-        bool isRunning = animator.GetBool("isRunning");
-        bool iJumping = animator.GetBool("isJumping");
-
-        if (isMovementPressed && !isRunning)
+        bool isWalking = animator.GetBool(isWalkingHash);
+        bool isRunning = animator.GetBool(isRunningHash);
+      
+        if (isMovementPressed && !isWalking)
         {
-            animator.SetBool("isRunning", true);
+            animator.SetBool(isWalkingHash, true);
         }
 
-        if (isMovementPressed && !isRunning)
+        if (isMovementPressed && !isWalking)
         {
-            animator.SetBool("isRunning", false);
+            animator.SetBool(isWalkingHash, false);
+        }
+
+        if ((isMovementPressed && isRunPressed) && !isRunning)
+        {
+            animator.SetBool(isRunningHash, true);
+        }
+
+        else if ((!isMovementPressed || !isRunPressed) && isRunning)
+        {
+            animator.SetBool(isRunningHash, false);
         }
     }
 
@@ -87,10 +100,14 @@ public class AnimationAndMovementController : MonoBehaviour
         {
             float groundedGravity = -0.05f;
             currentMovement.y = groundedGravity;
-        }
-        else {
+            currentRunMovement.y = groundedGravity;
+
+        }else {
             float gravity = -9.8f;
             currentMovement.y += gravity;
+            currentRunMovement.x += gravity;
+            currentRunMovement.y += gravity;
+            currentRunMovement.z += gravity;
         }
     }
 
@@ -100,6 +117,15 @@ public class AnimationAndMovementController : MonoBehaviour
         handleRotation();
         handleAnimation();
         characterController.Move(currentMovement * Time.deltaTime);
+
+        if (isRunPressed)
+        {
+            characterController.Move(currentMovement * Time.deltaTime);
+        }
+        else
+        {
+            characterController.Move(currentMovement * Time.deltaTime);
+        }
     }
 
     void OnEnable()
