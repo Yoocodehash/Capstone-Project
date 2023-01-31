@@ -6,7 +6,7 @@ public class Controller : MonoBehaviour
 {
     Rigidbody rb;
     float movementSpeed = 6f;
-    float jumpForce = 5f;
+   // float jumpForce = 5f;
 
     // Start is called before the first frame update
     void Start()

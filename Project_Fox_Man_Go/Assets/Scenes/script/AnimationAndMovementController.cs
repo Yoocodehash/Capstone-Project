@@ -105,6 +105,8 @@ public class AnimationAndMovementController : MonoBehaviour
         }else {
             float gravity = -9.8f;
             currentMovement.y += gravity;
+
+            // currentRunMovement += gravity;
             currentRunMovement.x += gravity;
             currentRunMovement.y += gravity;
             currentRunMovement.z += gravity;
