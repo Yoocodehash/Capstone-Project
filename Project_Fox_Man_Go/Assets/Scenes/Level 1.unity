@@ -15784,7 +15784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875449794350654438, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
       propertyPath: m_Name
-      value: Gate_Small
+      value: City Gate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
@@ -42689,10 +42689,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8875449794350654438, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
       propertyPath: m_Name
-      value: Gate_Small (1)
+      value: Nature Gate
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
+--- !u!1 &1251262350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8875449794350654438, guid: b581fdbd127292d44ab21c4b16d91d05, type: 3}
+  m_PrefabInstance: {fileID: 1251262349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1251262351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251262350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b25824469537c04aaac69bb2715df41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: level-2
 --- !u!1001 &1254292846
 PrefabInstance:
   m_ObjectHideFlags: 0
