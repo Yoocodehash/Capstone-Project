@@ -29,6 +29,25 @@ public class PauseMenu : MonoBehaviour
             }
 
         }
+
+
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (Paused)
+            {
+                Play();
+            }
+            else
+            {
+                Stop();
+            }
+
+        }
+
+
+
+
     }
 
     void Stop()
