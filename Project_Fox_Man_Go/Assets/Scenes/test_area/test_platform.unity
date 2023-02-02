@@ -1153,7 +1153,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18620
+  m_Name: pb_Mesh23514
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1664,8 +1664,10 @@ MonoBehaviour:
   cameraInput: {x: 0, y: 0}
   cameraInputX: 0
   cameraInputY: 0
+  moveAmount: 0
   verticalInput: 0
   horizontalInput: 0
+  b_Input: 0
 --- !u!114 &1848913350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1720,7 +1722,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9950d1ec08bdd641a14d56c6a96a9a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 7
+  isSpringting: 0
+  isGrounded: 1
+  inAirTimer: 0
+  leapingVelocity: 10
+  fallingVelocity: 50
+  rayCastHeightOffSet: 10
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  walkingSpeed: 1.5
+  runningSpeed: 5
+  sprintingSpeed: 7
   rotationspeed: 15
 --- !u!114 &1848913355
 MonoBehaviour:
@@ -1734,6 +1747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a588d34f0a78d5445aa5de1226068be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInteracting: 0
 --- !u!43 &1998143972
 Mesh:
   m_ObjectHideFlags: 0

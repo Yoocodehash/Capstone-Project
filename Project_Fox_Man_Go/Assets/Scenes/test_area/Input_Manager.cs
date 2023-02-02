@@ -6,6 +6,7 @@ public class Input_Manager : MonoBehaviour
 {
     Player_Controls playerControls;
     AnimationManager animationManager;
+    Player_Locomotion playerLocomotion;
 
     public Vector2 movementInput;
     public Vector2 cameraInput;
@@ -13,13 +14,17 @@ public class Input_Manager : MonoBehaviour
     public float cameraInputX;
     public float cameraInputY;
 
-    private float moveAmount;
+    public float moveAmount;
     public float verticalInput;
     public float horizontalInput;
+
+    public bool b_Input;
+    public bool jump_Input;
 
     private void Awake()
     {
         animationManager = GetComponent<AnimationManager>();
+        playerLocomotion = GetComponent<Player_Locomotion>();
     }
 
     private void OnEnable()
@@ -30,6 +35,10 @@ public class Input_Manager : MonoBehaviour
 
             playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
             playerControls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
+
+            playerControls.PlayerActions.B.performed += i => b_Input = true;
+            playerControls.PlayerActions.B.canceled += i => b_Input = false;
+            playerControls.PlayerActions.Jump.performed += i => jump_Input = true;
         }
         playerControls.Enable();
     }
@@ -42,7 +51,8 @@ public class Input_Manager : MonoBehaviour
     public void HandleAllInputs()
     {
         HandleMovementInput();
-        //HandleJumpingInput
+        HandleSprintingInput();
+         HandleJumpingInput();
         //HandleActionInput
     }
 
@@ -55,6 +65,27 @@ public class Input_Manager : MonoBehaviour
         cameraInputX = cameraInput.x;
 
         moveAmount = Mathf.Clamp01(Mathf.Abs(horizontalInput) + Mathf.Abs(verticalInput));
-        animationManager.UpdateAnimatorValues(0, moveAmount);
+        animationManager.UpdateAnimatorValues(0, moveAmount, playerLocomotion.isSpringting);
+    }
+
+    private void HandleSprintingInput()
+    {
+        if(b_Input && moveAmount > 0.5f)
+        {
+            playerLocomotion.isSpringting = true;
+        }
+        else 
+        {
+            playerLocomotion.isSpringting = false;
+        }
+    }
+
+    private void HandleJumpingInput()
+    {
+        if(jump_Input)
+        {
+            jump_Input = false;
+            playerLocomotion.HandleJumping();
+        }
     }
 }

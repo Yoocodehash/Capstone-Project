@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimationManager : MonoBehaviour
 {
-    Animator animator;
+    public Animator animator;
     int horizontal;
     int vertical;
 
@@ -15,7 +15,13 @@ public class AnimationManager : MonoBehaviour
         vertical = Animator.StringToHash("Veritacl");
     }
 
-    public void UpdateAnimatorValues(float horizontalMovement, float verticalMovement)
+    public void PlayerTargetAnimation(string targetAnimation, bool isInteracting)
+    {
+        animator.SetBool("isInteracting", isInteracting);
+        animator.CrossFade(targetAnimation, 0.25f);
+    }
+
+    public void UpdateAnimatorValues(float horizontalMovement, float verticalMovement, bool isSprinting)
     {
         //Animation snapping
         float snapperHorizontal;
@@ -68,6 +74,12 @@ public class AnimationManager : MonoBehaviour
             snappedVertical = 0;
         }
         #endregion
+
+        if(isSprinting)
+        {
+            snapperHorizontal = horizontalMovement;
+            snappedVertical = 2;
+        }
 
         animator.SetFloat(horizontal, snapperHorizontal, 0.1f, Time.deltaTime);
         animator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);
