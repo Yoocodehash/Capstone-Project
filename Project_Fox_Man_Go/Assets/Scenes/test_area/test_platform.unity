@@ -1153,7 +1153,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23514
+  m_Name: pb_Mesh35616
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1668,6 +1668,7 @@ MonoBehaviour:
   verticalInput: 0
   horizontalInput: 0
   b_Input: 0
+  jump_Input: 0
 --- !u!114 &1848913350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1680,6 +1681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62caf31c0c2544047b2a931e45c13a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
 --- !u!136 &1848913352
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1724,6 +1726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSpringting: 0
   isGrounded: 1
+  isJumping: 0
   inAirTimer: 0
   leapingVelocity: 10
   fallingVelocity: 50
@@ -1735,6 +1738,8 @@ MonoBehaviour:
   runningSpeed: 5
   sprintingSpeed: 7
   rotationspeed: 15
+  jumpHeight: 3
+  gravityIntensity: -15
 --- !u!114 &1848913355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1754,7 +1759,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18608
+  m_Name: pb_Mesh35600
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
