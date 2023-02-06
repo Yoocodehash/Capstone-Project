@@ -31,7 +31,6 @@ public class PauseMenu : MonoBehaviour
         }
 
 
-
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (Paused)
@@ -44,8 +43,6 @@ public class PauseMenu : MonoBehaviour
             }
 
         }
-
-
 
 
     }

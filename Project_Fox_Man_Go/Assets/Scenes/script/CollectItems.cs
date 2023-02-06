@@ -17,9 +17,9 @@ public class CollectItems : MonoBehaviour
     {
         if(Strawberry.gameObject.tag == "Strawberry")
         {
-            //Debug.Log("Strawberry Collected");
-            //strawberries = strawberries + 1;
-            //Strawberry.gameObject.SetActive(false);
+            Debug.Log("Strawberry Collected");
+            strawberries = strawberries + 1;
+            Strawberry.gameObject.SetActive(false);
             //Destroy(Strawberry.gameObject);
         }
     }

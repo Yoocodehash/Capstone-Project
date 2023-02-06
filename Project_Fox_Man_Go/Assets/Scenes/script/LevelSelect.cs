@@ -13,17 +13,17 @@ public class LevelSelect : MonoBehaviour
 
     public void NatureLevel()
     {
-
+        //SceneManager.LoadScene("Lab_level");
     }
 
     public void CityLevel()
     {
-
+        //SceneManager.LoadScene("Lab_level");
     }
 
     public void Ending()
     {
-
+        //SceneManager.LoadScene("Lab_level");
     }
 
 }
