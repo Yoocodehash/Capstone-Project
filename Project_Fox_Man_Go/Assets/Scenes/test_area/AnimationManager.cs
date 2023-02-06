@@ -12,7 +12,7 @@ public class AnimationManager : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         horizontal = Animator.StringToHash("Horizontal");
-        vertical = Animator.StringToHash("Veritacl");
+        vertical = Animator.StringToHash("Vertical");
     }
 
     public void PlayerTargetAnimation(string targetAnimation, bool isInteracting)
@@ -51,6 +51,7 @@ public class AnimationManager : MonoBehaviour
         }
         #endregion
 
+        //warning
         #region Snapped Vertical
         if (verticalMovement > 0 && verticalMovement < 0.55f)
         {
@@ -65,7 +66,7 @@ public class AnimationManager : MonoBehaviour
         {
             snappedVertical = -1;
         }
-        else if (verticalMovement < -0.55f)
+        else if (verticalMovement < -0.55f) //warning
         {
             snappedVertical = -1;
         }
@@ -82,6 +83,6 @@ public class AnimationManager : MonoBehaviour
         }
 
         animator.SetFloat(horizontal, snapperHorizontal, 0.1f, Time.deltaTime);
-        animator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);
+        animator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);// warning
     }
 }

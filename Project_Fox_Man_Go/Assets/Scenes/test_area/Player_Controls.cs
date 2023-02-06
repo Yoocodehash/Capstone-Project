@@ -215,7 +215,7 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""ec9e9b4a-2a19-41ee-bc2e-1f36f81598a2"",
-                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""path"": ""<Gamepad>/rightStick/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",

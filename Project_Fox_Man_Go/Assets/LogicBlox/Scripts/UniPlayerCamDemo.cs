@@ -253,7 +253,7 @@ public class UniPlayerCamDemo : MonoBehaviour{
     
    void moveController()
     {
-        float grav=0; 
+        float grav = 0; 
         moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         moveDirection = transform.TransformDirection(moveDirection);
         moveDirection *= currentSpeed;
