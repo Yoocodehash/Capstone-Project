@@ -22,6 +22,18 @@ public class CollectItems : MonoBehaviour
             Strawberry.gameObject.SetActive(false);
             //Destroy(Strawberry.gameObject);
         }
+
+        /*
+            if(Cherry.gameObject.tag == "Cherry")
+        {
+            Debug.Log("Cherry Collected");
+            cherries = cherries + 1;
+            Cherry.gameObject.SetActive(false);
+            //Destroy(Cherry.gameObject);
+        }
+         */
+
+
     }
 
     // Update is called once per frame
