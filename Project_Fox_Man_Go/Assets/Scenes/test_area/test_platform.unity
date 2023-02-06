@@ -2267,6 +2267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strawberries: 0
+  cherries: 0
 --- !u!136 &1848913352
 CapsuleCollider:
   m_ObjectHideFlags: 0
