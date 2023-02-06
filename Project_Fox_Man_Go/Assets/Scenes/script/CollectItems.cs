@@ -6,9 +6,7 @@ public class CollectItems : MonoBehaviour
 {
 
     public int strawberries;
-
-    public int cherries;
-
+    //public int cherries;
 
     // Start is called before the first frame update
     void Start()
