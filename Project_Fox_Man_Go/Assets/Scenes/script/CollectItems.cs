@@ -7,6 +7,9 @@ public class CollectItems : MonoBehaviour
 
     public int strawberries;
 
+    public int cherries;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,21 +26,24 @@ public class CollectItems : MonoBehaviour
             //Destroy(Strawberry.gameObject);
         }
 
-        /*
-            if(Cherry.gameObject.tag == "Cherry")
+    }
+
+    /*
+    public void OnTriggerEnter(Collider Cherry)
+    {
+        if (Cherry.gameObject.tag == "Cherry")
         {
             Debug.Log("Cherry Collected");
             cherries = cherries + 1;
             Cherry.gameObject.SetActive(false);
             //Destroy(Cherry.gameObject);
         }
-         */
-
-
     }
+    */
 
-    // Update is called once per frame
-    void Update()
+
+// Update is called once per frame
+void Update()
     {
         
     }
