@@ -161,9 +161,9 @@ MonoBehaviour:
   cameraCollisionOffSet: 20
   minimumCollisionOffSet: 20
   cameraCollisionRadius: 20
-  cameraFollowSpeed: 20
-  cameraLookSpeed: 20
-  cameraPivotSpeed: 20
+  cameraFollowSpeed: 1
+  cameraLookSpeed: 1
+  cameraPivotSpeed: 1
   lookAngle: 20
   pivotAngle: 20
   minimumPivotAngle: -35
@@ -1434,7 +1434,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh58570
+  m_Name: pb_Mesh43352
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2365,7 +2365,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh58554
+  m_Name: pb_Mesh43336
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
