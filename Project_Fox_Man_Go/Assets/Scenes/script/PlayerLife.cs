@@ -21,7 +21,8 @@ public class PlayerLife : MonoBehaviour
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<Rigidbody>().isKinematic = true;
         GetComponent<PlayerMovement>().enabled = false;
-        ReloadLevel();
+        //ReloadLevel();
+        Invoke(nameof(ReloadLevel), 1.3f);
     }
 
     void ReloadLevel()
