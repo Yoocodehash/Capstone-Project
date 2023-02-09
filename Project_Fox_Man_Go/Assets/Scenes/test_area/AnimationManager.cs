@@ -18,7 +18,7 @@ public class AnimationManager : MonoBehaviour
     public void PlayerTargetAnimation(string targetAnimation, bool isInteracting)
     {
         animator.SetBool("isInteracting", isInteracting);
-        animator.CrossFade(targetAnimation, 0.25f);
+        animator.CrossFade(targetAnimation, 0.2f);
     }
 
     public void UpdateAnimatorValues(float horizontalMovement, float verticalMovement, bool isSprinting)
@@ -50,8 +50,6 @@ public class AnimationManager : MonoBehaviour
             snapperHorizontal = 0;
         }
         #endregion
-
-        //warning
         #region Snapped Vertical
         if (verticalMovement > 0 && verticalMovement < 0.55f)
         {

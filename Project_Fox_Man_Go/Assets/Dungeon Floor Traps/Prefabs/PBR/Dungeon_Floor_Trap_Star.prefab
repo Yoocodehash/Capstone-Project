@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4466691211728650}
   - component: {fileID: 33957956572118268}
   - component: {fileID: 23956151935235542}
+  - component: {fileID: 892703439922146574}
   - component: {fileID: 64838807642795226}
   m_Layer: 0
   m_Name: Dungeon_Floor_Trap_Star
@@ -82,6 +83,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &892703439922146574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022355727804264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3588015aa285d8d41b7f487bd82227e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 1
 --- !u!64 &64838807642795226
 MeshCollider:
   m_ObjectHideFlags: 0

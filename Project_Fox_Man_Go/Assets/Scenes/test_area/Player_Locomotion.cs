@@ -61,17 +61,20 @@ public class Player_Locomotion : MonoBehaviour
     // Update is called once per frame
     private void HandleMovement()
     {
+        if (isJumping)
+            return;
+
         moveDirection = cameraObject.forward * inputManager.verticalInput;
         moveDirection = moveDirection + cameraObject.right * inputManager.horizontalInput;
         moveDirection.Normalize();
         moveDirection.y = 0;
 
-        if (isSpringting)
+       if (isSpringting)
         {
-            moveDirection = moveDirection * sprintingSpeed;
+          moveDirection = moveDirection * sprintingSpeed;
         }
-        else
-        {
+       else
+       {
             if (inputManager.moveAmount >= 0.5f)
             {
                 moveDirection = moveDirection * runningSpeed;
@@ -80,7 +83,7 @@ public class Player_Locomotion : MonoBehaviour
             {
                 moveDirection = moveDirection * walkingSpeed;
             }
-        }
+       }
 
         Vector3 movementVelocity = moveDirection * runningSpeed;
         playerRigidbody.velocity = movementVelocity;
@@ -111,7 +114,9 @@ public class Player_Locomotion : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 rayCastOrigin = transform.position;
+        Vector3 targetPosition;
         rayCastOrigin.y = rayCastOrigin.y + rayCastHeightOffSet;
+        targetPosition = transform.position;
 
         if(!isGrounded && !isJumping)
         {
@@ -131,12 +136,26 @@ public class Player_Locomotion : MonoBehaviour
                 animationManager.PlayerTargetAnimation("Land", true);
             }
 
+            Vector3 rayCastHitPoint = hit.point;
+            targetPosition.y = rayCastHitPoint.y;
             inAirTimer = 0;
             isGrounded = true;
         }
         else
         {
             isGrounded = false;
+        }
+        
+        if(isGrounded && !isJumping)
+        {
+            if(playerManager.isInteracting || inputManager.moveAmount > 0)
+            {
+                transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime / 0.1f);
+            }
+            else
+            {
+                transform.position = targetPosition;
+            }
         }
     }
 
