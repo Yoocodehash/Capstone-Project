@@ -8,6 +8,8 @@ public class CollectItems : MonoBehaviour
     public int strawberries;
     //public int cherries;
 
+    [SerializeField] AudioSource collectSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,9 @@ public class CollectItems : MonoBehaviour
             strawberries = strawberries + 1;
             Strawberry.gameObject.SetActive(false);
             //Destroy(Strawberry.gameObject);
+
+            collectSound.Play();
+
         }
 
     }
