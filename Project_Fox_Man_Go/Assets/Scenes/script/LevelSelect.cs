@@ -11,14 +11,20 @@ public class LevelSelect : MonoBehaviour
         SceneManager.LoadScene("Lab_level");
     }
 
+
+    public void EscapeLevel()
+    {
+        SceneManager.LoadScene("Level 1");
+    }
+
     public void NatureLevel()
     {
-        //SceneManager.LoadScene("Lab_level");
+        SceneManager.LoadScene("level-2");
     }
 
     public void CityLevel()
     {
-        //SceneManager.LoadScene("Lab_level");
+        SceneManager.LoadScene("Level-3");
     }
 
     public void Ending()
