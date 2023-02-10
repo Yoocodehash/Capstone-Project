@@ -252,7 +252,7 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""981a58a7-ef1d-47f1-8fc2-e88cb25260a2"",
-                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""path"": ""<DualShockGamepad>/rightShoulder"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -275,6 +275,17 @@ public partial class @Player_Controls : IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""ff1db3fe-947e-4db7-8fa3-0bfaff1c957e"",
                     ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fa469627-28ac-400e-bec1-8915321d1337"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
