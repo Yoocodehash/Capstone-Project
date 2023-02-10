@@ -81,6 +81,6 @@ public class AnimationManager : MonoBehaviour
         }
 
         animator.SetFloat(horizontal, snapperHorizontal, 0.1f, Time.deltaTime);
-        animator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);// warning
+        animator.SetFloat(vertical, snappedVertical, 0.1f, Time.deltaTime);
     }
 }

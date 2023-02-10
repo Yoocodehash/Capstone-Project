@@ -33,7 +33,7 @@ public class Input_Manager : MonoBehaviour
         {
             playerControls = new Player_Controls();
 
-            playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();
+            playerControls.PlayerMovement.Movement.performed += i => movementInput = i.ReadValue<Vector2>();//WASD 
             playerControls.PlayerMovement.Camera.performed += i => cameraInput = i.ReadValue<Vector2>();
 
             playerControls.PlayerActions.B.performed += i => b_Input = true;
