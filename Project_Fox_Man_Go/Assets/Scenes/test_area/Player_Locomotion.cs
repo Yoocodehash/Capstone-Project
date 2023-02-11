@@ -34,6 +34,10 @@ public class Player_Locomotion : MonoBehaviour
     public float jumpHeight = 3;
     public float gravityIntensity = -15;
 
+   [Header("Slope Handling")]
+   public float maxSlopeAngle;
+   private RaycastHit slopeHit;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -56,6 +60,19 @@ public class Player_Locomotion : MonoBehaviour
 
         HandleMovement();
         HandleRotation();
+
+        
+        if(OnSlope())
+        {
+            playerRigidbody.AddForce(GetSlopeMoveDirection() * runningSpeed * 20f, ForceMode.Force);
+
+            if (playerRigidbody.velocity.y > 0)
+                playerRigidbody.AddForce(Vector3.down * 80f, ForceMode.Force);
+        }
+
+        //turn gravity
+        playerRigidbody.useGravity = !OnSlope();
+
     }
 
     // Update is called once per frame
@@ -161,7 +178,7 @@ public class Player_Locomotion : MonoBehaviour
 
     public void HandleJumping()
     {
-        if(isGrounded)
+        if (isGrounded)
         {
             animationManager.animator.SetBool("isJumping", true);
             animationManager.PlayerTargetAnimation("Jump", false);
@@ -172,4 +189,20 @@ public class Player_Locomotion : MonoBehaviour
             playerRigidbody.velocity = playerVelocity;
         }
     }
+
+    private bool OnSlope()
+    {
+        if(Physics.Raycast(transform.position,Vector3.down,out slopeHit, 5))
+        {
+            float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            return angle < maxSlopeAngle && angle != 0;
+        }
+        return false;
+    }
+
+    private Vector3 GetSlopeMoveDirection()
+    {
+        return Vector3.ProjectOnPlane(moveDirection, slopeHit.normal).normalized;
+    }
+
 }
