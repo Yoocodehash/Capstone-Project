@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class PlayerLife : MonoBehaviour
 {
 
-    [SerializeField] AudioSource deathSound;
-
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -20,6 +18,7 @@ public class PlayerLife : MonoBehaviour
 
     }
 
+    
     void Die()
     {
         //GetComponent<MeshRenderer>().enabled = false;
@@ -27,9 +26,6 @@ public class PlayerLife : MonoBehaviour
         //GetComponent<PlayerMovement>().enabled = false;
         //ReloadLevel();
         Invoke(nameof(ReloadLevel), 1.3f);
-
-        deathSound.Play();
-
     }
 
     void ReloadLevel()
