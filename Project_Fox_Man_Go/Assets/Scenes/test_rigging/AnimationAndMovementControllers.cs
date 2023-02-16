@@ -19,6 +19,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
     Vector2 currentMovementInput;
     Vector3 currentMovement;
     Vector3 currentRunMovement;
+    Vector3 appliedMovement;
     bool isMovementPressed;
     bool isRunPressed;
 
@@ -34,7 +35,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
     // jumping variables
     bool isJumpPressed = false;
     float initialJumpVelocitys;
-    float maxJumpHeight = 4.0f;
+    float maxJumpHeight = 2.0f;
     float maxJumpTime = 0.75f;
     bool isJumping = false;
     int isJumpingHash;
@@ -103,8 +104,8 @@ public class AnimationAndMovementControllers : MonoBehaviour
             isJumping = true;
             jumpCount += 1;
             animator.SetInteger(jumpCountHash, jumpCount);
-            currentMovement.y = initialJumpVelocities[jumpCount] * .5f;
-            currentRunMovement.y = initialJumpVelocities[jumpCount] * .5f;
+            currentMovement.y = initialJumpVelocities[jumpCount];
+            appliedMovement.y = initialJumpVelocities[jumpCount];
         }
         else if (!isJumpPressed && isJumping && characterController.isGrounded)
         {
@@ -205,23 +206,19 @@ public class AnimationAndMovementControllers : MonoBehaviour
                 }
             }
             currentMovement.y = groundedGravity;
-            currentRunMovement.y = groundedGravity;
+            appliedMovement.y = groundedGravity;
         }
         else if (isFalling)
         {
             float previousYVelocity = currentMovement.y;
-            float newYVelocity = currentMovement.y + (jumpGravities[jumpCount] * fallMultiplier * Time.deltaTime);
-            float nextYVelocity = Mathf.Max((previousYVelocity + newYVelocity) * .5f, -20.0f);
-            currentMovement.y = nextYVelocity;
-            currentRunMovement.y = nextYVelocity;
+            currentMovement.y = currentMovement.y + (jumpGravities[jumpCount] * fallMultiplier * Time.deltaTime);
+            appliedMovement.y = Mathf.Max((previousYVelocity + currentMovement.y) * .5f, -20.0f);
         }
         else
         {
             float previousYVelocity = currentMovement.y;
-            float newYVelocity = currentMovement.y + (jumpGravities[jumpCount] * Time.deltaTime);
-            float nextYVelocity = (previousYVelocity + newYVelocity) * .5f;
-            currentMovement.y = nextYVelocity;
-            currentRunMovement.y = nextYVelocity;
+            currentMovement.y = currentMovement.y + (jumpGravities[jumpCount] * Time.deltaTime);
+            appliedMovement.y = (previousYVelocity + currentMovement.y) * .5f;
         }
     }
 
@@ -233,12 +230,16 @@ public class AnimationAndMovementControllers : MonoBehaviour
 
         if (isRunPressed)
         {
-            characterController.Move(currentRunMovement * Time.deltaTime);
+            appliedMovement.x = currentRunMovement.x;
+            appliedMovement.z = currentRunMovement.z;
         }
         else
         {
-            characterController.Move(currentMovement * Time.deltaTime);
+            appliedMovement.x = currentMovement.x;
+            appliedMovement.z = currentMovement.z;
         }
+
+        characterController.Move(appliedMovement * Time.deltaTime);
 
         handleGravity();
         handleJump();
