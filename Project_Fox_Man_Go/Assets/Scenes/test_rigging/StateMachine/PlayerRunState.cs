@@ -9,14 +9,14 @@ public class PlayerRunState : PlayerBaseState
 
 
     public override void EnterState() {
-        Ctx.Animator.SetBool(Ctx.IsWalkingHash, false);
-        Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
+        Ctx.Animator.SetBool(Ctx.IsWalkingHash, true);
+        Ctx.Animator.SetBool(Ctx.IsRunningHash, true);
     }
 
     public override void UpdateState() {
-        CheckSwitchStates();
         Ctx.AppliedMovementX = Ctx.CurrentMovementInput.x * Ctx.RunMultiplier;
         Ctx.AppliedMovementZ = Ctx.CurrentMovementInput.y * Ctx.RunMultiplier;
+        CheckSwitchStates();
     }
 
     public override void ExitState() { }

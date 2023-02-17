@@ -18,13 +18,6 @@ public abstract class PlayerBaseState
     public abstract void CheckSwitchStates();
     public abstract void InitializeSubState();
 
-   public void UpdateStates() { 
-    UpdateState();
-        if(_currentSubState != null)
-     {
-            _currentSubState.UpdateStates();
-     }
-   }
 
     protected void SwitchState(PlayerBaseState newState)
     {
@@ -45,6 +38,15 @@ public abstract class PlayerBaseState
         {
             //set the current super states sub state to the new state
             _currentSuperState.SetSubState(newState);
+        }
+    }
+
+    public void UpdateStates()
+    {
+        UpdateState();
+        if (_currentSubState != null)
+        {
+            _currentSubState.UpdateStates();
         }
     }
 
