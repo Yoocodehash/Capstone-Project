@@ -7,6 +7,21 @@ using UnityEngine.InputSystem.LowLevel;
 
 public class FireBall : MonoBehaviour
 {
+   public Transform projectilePoint;
+   public GameObject fireballprefab;
+   public float fireballspeed = 10;
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            var magic = Instantiate(fireballprefab, projectilePoint.position, projectilePoint.rotation);
+            magic.GetComponent<Rigidbody>().velocity = projectilePoint.forward * fireballspeed;
+
+        }
+    }
+
+    /*
     public Camera cam;
     public GameObject projectile;
     public Transform RHFirePoint;
@@ -99,4 +114,5 @@ public class FireBall : MonoBehaviour
         var projectileObj = Instantiate(projectile, firePoint.position, Quaternion.identity) as GameObject;
         projectileObj.GetComponent<Rigidbody>().velocity = (destination - firePoint.position).normalized * projectileSpeed;
     }
+    */
 }
