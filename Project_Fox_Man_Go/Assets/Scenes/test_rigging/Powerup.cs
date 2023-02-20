@@ -4,17 +4,37 @@ using UnityEngine;
 
 public class Powerup : MonoBehaviour
 {
-     void OnTriggerEnter(Collider other)
+    public FireBall fire_orb;
+    public IceBall ice_orb;
+
+
+
+    void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Pickup(other);
+             fire_orb.enabled = true;
+            // ice_orb.enabled = true;
+            // comment out 1 of them for the other to play they can't play at the same time.
         }
+
+        /*
+        //not working don't know why
+        if (fire_orb.enabled == true)
+        {
+            ice_orb.enabled = false;
+        }
+
+        if (ice_orb.enabled == true)
+        {
+            fire_orb.enabled = false;
+        }
+        */
     }
 
     void Pickup(Collider player)
     {
-        FireBall stats = player.GetComponent<FireBall>();
         Destroy(gameObject);
     }
 }
