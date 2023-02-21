@@ -13,14 +13,23 @@ public class FireBall : MonoBehaviour
 
     //  PlayerInput playerInput;
     //  CharacterController characterController;
-   /// Animator animator;
+    /// Animator animator;
 
     //int isAttackHash;
-
-   // void Awake()
-   // {
-      //  isAttackHash = Animator.StringToHash("isAttack");
+    //bool isAttackPressed;
+    // void Awake()
+    // {
+    //  isAttackHash = Animator.StringToHash("isAttack");
+    //  playerInput.CharacterControls.Attacks.started += OnAttack
+    //  playerInput.CharacterControls.Attacks.canceled += OnAttack
     //}
+
+    /*
+      void OnAttack(InputAction.CallbackContext context)
+    {
+       isAttackPressed = context.ReadValueAsButton();
+    }
+    */
 
     void Update()
     {
