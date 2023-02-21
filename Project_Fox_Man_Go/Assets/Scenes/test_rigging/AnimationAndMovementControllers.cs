@@ -98,6 +98,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
             if (jumpCount < 3 && currentJumpResetRoutine != null)
             {
                 StopCoroutine(currentJumpResetRoutine);
+   
             }
             animator.SetBool(isJumpingHash, true);
             isJumpAnimating = true;

@@ -9,12 +9,20 @@ public class shieldpower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim();
     }
 
     // Update is called once per frame
     void Update()
     {
-       playershield.SetActive(true);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            playershield.SetActive(false);
+        }
+    }
+
+    void anim()
+    {
+        playershield.SetActive(true);
     }
 }
