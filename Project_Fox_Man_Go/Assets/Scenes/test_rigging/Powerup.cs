@@ -5,33 +5,29 @@ using UnityEngine;
 public class Powerup : MonoBehaviour
 {
     public FireBall fire_orb;
-    public IceBall ice_orb;
-
+    float Duration = 4f;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            Pickup(other);
-            fire_orb.enabled = true;
-            //able to switch powerup so player can choose carefully which powerup they pick
-            /*
-            if (fire_orb.enabled == true)
-            {
-                ice_orb.enabled = false;
-            }
 
-            if (ice_orb.enabled == true)// or else if?
-            {
-                fire_orb.enabled = false;
-            }
-            */
-            // comment out 1 of them for the other to play they can't play at the same time.
+        if (other.gameObject.CompareTag("Player"))
+        {
+            //Pickup(other);
+            StartCoroutine(Pickup(other));
+            fire_orb.enabled = true;
+
+            
         }
     }
 
-    void Pickup(Collider player)
+    IEnumerator Pickup(Collider player)
     {
+        //GetComponent<FireBall>().enabled = true;
+        GetComponent<SphereCollider>().enabled = false;
+        yield return new WaitForSeconds(Duration);
+        fire_orb.enabled = false;
+
         Destroy(gameObject);
     }
+
 }
