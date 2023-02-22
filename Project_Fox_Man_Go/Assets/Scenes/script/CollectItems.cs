@@ -5,8 +5,10 @@ using UnityEngine;
 public class CollectItems : MonoBehaviour
 {
 
-    public int strawberries;
+    public int collectables;
     //public int cherries;
+    //public int strawberries;
+
 
     [SerializeField] AudioSource collectSound;
 
@@ -16,14 +18,14 @@ public class CollectItems : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter(Collider Strawberry)
+    public void OnTriggerEnter(Collider Collectable)
     {
-        if(Strawberry.gameObject.tag == "Strawberry")
+        if(Collectable.gameObject.tag == "Collectable")
         {
-            Debug.Log("Strawberry Collected");
-            strawberries = strawberries + 1;
-            Strawberry.gameObject.SetActive(false);
-            //Destroy(Strawberry.gameObject);
+            Debug.Log("Collectable Collected");
+            collectables = collectables + 1;
+            Collectable.gameObject.SetActive(false);
+            //Destroy(Collectable.gameObject);
 
             collectSound.Play();
 
@@ -45,9 +47,29 @@ public class CollectItems : MonoBehaviour
     */
 
 
-// Update is called once per frame
-void Update()
+    /*
+        public void OnTriggerEnter(Collider Strawberry)
     {
-        
+        if(Strawberry.gameObject.tag == "Strawberry")
+        {
+            Debug.Log("Strawberry Collected");
+            strawberries = collectables + 1;
+            Strawberry.gameObject.SetActive(false);
+            //Destroy(Strawberry.gameObject);
+
+            collectSound.Play();
+
+        }
+
     }
+    */
+
+
+
+
+    // Update is called once per frame
+    void Update()
+{
+
+}
 }
