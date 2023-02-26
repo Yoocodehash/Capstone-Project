@@ -187,7 +187,18 @@
                 {
                     "name": "",
                     "id": "c21ea97b-419a-4287-be4f-3b46e3a84a7e",
-                    "path": "<Mouse>/leftButton",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attacks",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ca6d4856-50de-48e5-9b3b-3e78e03071fc",
+                    "path": "",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
