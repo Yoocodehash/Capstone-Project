@@ -1369,6 +1369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shield
       objectReference: {fileID: 0}
+    - target: {fileID: 6935497569503870946, guid: b78fdde1d81208b4aa04f29ac0444e84, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6935497569503870947, guid: b78fdde1d81208b4aa04f29ac0444e84, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5461,7 +5465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 39.124
+      value: 52.63
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83df9562de1b27646afd2f8bfb8d8927, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9301,7 +9305,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650090941}
-  m_LocalRotation: {x: 0.13522582, y: 0.00011681832, z: -0.000015943297, w: 0.9908148}
+  m_LocalRotation: {x: 0.13522582, y: 0.00011685242, z: -0.00001594795, w: 0.9908148}
   m_LocalPosition: {x: 1.018849, y: -1.3282007, z: 27.516378}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -9603,7 +9607,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697203239}
-  m_LocalRotation: {x: 0.13522582, y: 0.00011681832, z: -0.000015943297, w: 0.9908148}
+  m_LocalRotation: {x: 0.13522582, y: 0.00011685242, z: -0.00001594795, w: 0.9908148}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10106,6 +10110,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6625402751103102372, guid: 083dcca815165da459de1594f8cebca4, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625402751103102372, guid: 083dcca815165da459de1594f8cebca4, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6625402751103102372, guid: 083dcca815165da459de1594f8cebca4, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7901971729582628791, guid: 083dcca815165da459de1594f8cebca4, type: 3}
@@ -11075,7 +11087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1981101273}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
