@@ -27,6 +27,12 @@ public class LevelSelect : MonoBehaviour
         SceneManager.LoadScene("Level-3");
     }
 
+    public void EndlessRunnerLevel()
+    {
+        SceneManager.LoadScene("Final Stage");
+    }
+
+
     public void Ending()
     {
         //SceneManager.LoadScene("Lab_level");
