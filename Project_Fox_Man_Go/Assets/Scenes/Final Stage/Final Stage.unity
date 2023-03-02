@@ -6716,12 +6716,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d724337901d20c94782d631d6b648e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  section:
+  Section:
   - {fileID: 2038043707}
   - {fileID: 433564413}
   - {fileID: 956839448}
-  creatingSection: 1
-  zPos: 550
+  creatingSection: 0
+  zPos: 50
   secNum: 2
 --- !u!1 &1730875729
 GameObject:
