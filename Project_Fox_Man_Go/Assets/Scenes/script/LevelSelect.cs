@@ -32,10 +32,24 @@ public class LevelSelect : MonoBehaviour
         SceneManager.LoadScene("Final Stage");
     }
 
-
-    public void Ending()
+    /*
+    public void EndingTextCutscene()
     {
         //SceneManager.LoadScene("Lab_level");
     }
+
+    public void BeginningTextCutscene()
+    {
+
+    }
+
+    */
+
+    public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("You have quit the game!");
+    }
+
 
 }
