@@ -29,7 +29,7 @@ public class CollectItems : MonoBehaviour
 
             //new
             CollactableControl.collectableCount += 1;
-            this.gameObject.SetActive(false);
+           // this.gameObject.SetActive(false);
             //
             collectSound.Play();
 
