@@ -9,6 +9,7 @@ public class Collection : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         soundFX.Play();
+        CollactableControl.collectableCount += 1;
         this.gameObject.SetActive(false);
     }
 }

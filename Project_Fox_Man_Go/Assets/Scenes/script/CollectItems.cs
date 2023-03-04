@@ -27,6 +27,10 @@ public class CollectItems : MonoBehaviour
             Collectable.gameObject.SetActive(false);
             //Destroy(Collectable.gameObject);
 
+            //new
+            CollactableControl.collectableCount += 1;
+            this.gameObject.SetActive(false);
+            //
             collectSound.Play();
 
         }
