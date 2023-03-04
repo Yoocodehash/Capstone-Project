@@ -51,5 +51,10 @@ public class LevelSelect : MonoBehaviour
         Debug.Log("You have quit the game!");
     }
 
+    public void Back()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
 
 }
