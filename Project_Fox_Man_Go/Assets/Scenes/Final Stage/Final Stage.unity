@@ -1686,6 +1686,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1218462404598692185, guid: 17d467e453cb3374eb4bc48b9ab40d46, type: 3}
   m_PrefabInstance: {fileID: 292472965}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &292472969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292472966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea870506e7d3fa4890315ba0dddedc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFX: {fileID: 0}
 --- !u!4 &302860114 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4777469181809006, guid: 2bd413b982191d54396bb381188bb4d0, type: 3}
@@ -4529,6 +4542,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1991446135183877091, guid: 17d467e453cb3374eb4bc48b9ab40d46, type: 3}
   m_PrefabInstance: {fileID: 636565497}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &776245874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776245873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea870506e7d3fa4890315ba0dddedc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFX: {fileID: 0}
 --- !u!136 &776245875
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7724,6 +7750,7 @@ GameObject:
   - component: {fileID: 1566971613}
   - component: {fileID: 1566971614}
   - component: {fileID: 1566971615}
+  - component: {fileID: 1566971616}
   m_Layer: 3
   m_Name: Cube
   m_TagString: Player
@@ -7852,7 +7879,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectables: 1
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 1566971616}
+--- !u!82 &1566971616
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566971608}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9088786b15556e94384649cce0166da7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1574951285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4244113901689226, guid: 836ca07fc69b4184ca14265c7d24030d, type: 3}
@@ -8584,6 +8707,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1991446135183877091, guid: 17d467e453cb3374eb4bc48b9ab40d46, type: 3}
   m_PrefabInstance: {fileID: 365721956}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1740668195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740668194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea870506e7d3fa4890315ba0dddedc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFX: {fileID: 0}
 --- !u!136 &1740668196
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9315,6 +9451,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1991446135183877091, guid: 17d467e453cb3374eb4bc48b9ab40d46, type: 3}
   m_PrefabInstance: {fileID: 490935094}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1886488682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886488681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea870506e7d3fa4890315ba0dddedc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFX: {fileID: 0}
 --- !u!136 &1886488683
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10169,6 +10318,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1991446135183877091, guid: 17d467e453cb3374eb4bc48b9ab40d46, type: 3}
   m_PrefabInstance: {fileID: 1710054787}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2035408886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035408885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea870506e7d3fa4890315ba0dddedc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundFX: {fileID: 0}
 --- !u!136 &2035408887
 CapsuleCollider:
   m_ObjectHideFlags: 0
