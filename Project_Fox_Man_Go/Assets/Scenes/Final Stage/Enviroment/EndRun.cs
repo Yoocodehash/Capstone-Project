@@ -16,7 +16,7 @@ public class EndRun : MonoBehaviour
 
     IEnumerator EndSequence()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         liveCollectable.SetActive(false);
         liveDis.SetActive(false);
         endScreen.SetActive(true);
