@@ -25,7 +25,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
 
     // constants
     float rotationFactorPerFrame = 15.0f;
-    float runMultiplier = 3.0f;
+    float runMultiplier = 4.5f;
     int zero = 0;
 
     //gravity variables
