@@ -9,6 +9,9 @@ public class Restart : MonoBehaviour
     {
         //Make sure that the scene is
         //added to build settings
-        SceneManager.LoadScene(2);
+
+        //SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Final Stage");
+
     }
 }
