@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Collectable
   - WayPoints
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - whatIsPlayer
   - IsInteracting
-  - 
-  - 
+  - Obstacle
+  - Ground
   - whatIsGround
   - 
   - 

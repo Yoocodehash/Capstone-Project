@@ -246,6 +246,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
         handleJump();
     }
 
+
     void OnEnable()
     {
         //enable the character controls action map
