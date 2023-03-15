@@ -22,6 +22,51 @@ public class DeathPlayer : MonoBehaviour
 
 
 
+
+    /*
+    public GameOverPlayer gameOverPlayer;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //gameoverScreen.SetActive(true);
+            gameOverPlayer.GameOverMenu;
+        }
+    }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameoverScreen.SetActive(false);
+    }
+
+
+
+    public void GameOverMenu()
+    {
+        gameoverScreen.SetActive(true);
+    }
+
+    */
+
+
+
+
+
+    /*
+    private void OnCollisionEnter(Collision collision)
+    {
+      if(collision.gameObject.CompareTag("Player"))
+        {
+  SceneManager.LoadScene("GameOverScreen");
+        }
+     }
+     */
+
+
+
+
     /*
     // Start is called before the first frame update
     void Start()
