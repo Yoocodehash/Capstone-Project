@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class GameOverPlayer : MonoBehaviour
 {
+    
 
     /*
     // Start is called before the first frame update

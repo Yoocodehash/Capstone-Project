@@ -9,6 +9,11 @@ public class CollactableControl : MonoBehaviour
     public GameObject collectableCountDisplay;
     public GameObject collectableEndDisplay;
 
+    private void Start()
+    {
+        collectableCount = 0;
+    }
+
     private void Update()
     {
         collectableCountDisplay.GetComponent<Text>().text = "" + collectableCount;
