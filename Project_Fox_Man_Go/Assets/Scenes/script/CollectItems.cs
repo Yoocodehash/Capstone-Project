@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+//using TMPro;
 using UnityEngine;
 
 public class CollectItems : MonoBehaviour
@@ -10,12 +11,19 @@ public class CollectItems : MonoBehaviour
     //public int strawberries;
 
 
+    //public MenuController menuController;
+
+    //public TextMeshProGUI countText;
+
+
+
     [SerializeField] AudioSource collectSound;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //SetCountText();
+        //winTextObject.SetActive(false);
     }
 
     public void OnTriggerEnter(Collider Collectable)
@@ -32,6 +40,8 @@ public class CollectItems : MonoBehaviour
            // this.gameObject.SetActive(false);
             //
             collectSound.Play();
+
+            //SetCountText();
 
         }
 
@@ -76,4 +86,31 @@ public class CollectItems : MonoBehaviour
 {
 
 }
+
+
+
+
+
+    /*
+     
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+            if(count >= 12)
+            {
+                //winTextObject.SetActive(true);
+                menuController.WinGame();
+            }
+
+     }
+
+
+     */
+
+
+
+
+
+
+
 }
