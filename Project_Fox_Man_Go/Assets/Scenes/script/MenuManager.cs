@@ -7,6 +7,10 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+
+    public GameObject endPanel;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,22 +24,17 @@ public class MenuManager : MonoBehaviour
     }
 
 
+    //public void LoseGame()
+    //{
+        //endPanel.SetActive(true);
+        //endPanel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "Game Over";
+    //}
 
-
-
-    public GameObject endPanel;
-
-
-    public void LoseGame()
-    {
-        endPanel.setActive(true);
-        endPanel.transform.GetChild(0).GetComponent<TextMeshProGUI>().text = "Game Over";
-    }
 
     public void WinGame()
     {
-        endPanel.setActive(true);
-        endPanel.transform.GetChild(0).GetComponent<TextMeshProGUI>().text = "You Win!";
+        endPanel.SetActive(true);
+        endPanel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "You Win!";
     }
 
 
