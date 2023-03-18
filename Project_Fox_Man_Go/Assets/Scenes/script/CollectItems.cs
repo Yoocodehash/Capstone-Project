@@ -13,7 +13,7 @@ public class CollectItems : MonoBehaviour
 
     //public MenuController menuController;
 
-    //public TextMeshProGUI countText;
+    //public TextMeshProUGUI countText;
 
 
 
