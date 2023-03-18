@@ -10,12 +10,12 @@ public class CollectItems : MonoBehaviour
     //public int cherries;
     //public int strawberries;
 
-
     //public MenuController menuController;
-
     //public TextMeshProUGUI countText;
 
 
+    //public MenuManager menuManager;
+    //public TextMeshProUGUI countText;
 
     [SerializeField] AudioSource collectSound;
 
@@ -91,21 +91,23 @@ public class CollectItems : MonoBehaviour
 
 
 
-    /*
-     
+    
+     /*
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
-            if(count >= 12)
+        countText.text = "Count: " + countText.ToString();
+        //countText.text = "Count: " + count.ToString();
+        if (count >= 2)
+            //if (count >= 12)
             {
-                //winTextObject.SetActive(true);
-                menuController.WinGame();
+            //winTextObject.SetActive(true);
+            menuManager.WinGame();
             }
 
      }
-
-
      */
+
+     
 
 
 
