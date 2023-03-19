@@ -32973,21 +32973,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6625402751103102372, guid: 083dcca815165da459de1594f8cebca4, type: 3}
   m_PrefabInstance: {fileID: 1781973439}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1781973443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781973442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81c0aaab6a43bb84db7ea4846f7e6e43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collectables: 0
-  collectSound: {fileID: 1781973444}
---- !u!82 &1781973444
+--- !u!82 &1781973443
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32998,7 +32984,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 797af83c85982034a93fc7ca3a86390b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -33083,6 +33069,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1781973444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781973442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81c0aaab6a43bb84db7ea4846f7e6e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectables: 0
+  collectSound: {fileID: 1781973443}
 --- !u!114 &1781973445 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 479851154368963127, guid: 083dcca815165da459de1594f8cebca4, type: 3}
