@@ -20,7 +20,7 @@ public class WinMenu : MonoBehaviour
 
 
 
-
+    /*
 
     public void ReplayLevel()
     {
@@ -52,7 +52,7 @@ public class WinMenu : MonoBehaviour
     }
 
 
-
+    */
 
 
 
