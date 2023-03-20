@@ -40,7 +40,7 @@ public class WinMenu : MonoBehaviour
         //SceneManager.LoadScene("New Helath");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-        //endPanel.setActive(false)
+        //endPanel.setActive(false);
 
     }
 
@@ -49,7 +49,7 @@ public class WinMenu : MonoBehaviour
     {
         SceneManager.LoadScene("level-2");
 
-        //endPanel.setActive(false)
+        //endPanel.setActive(false);
 
     }
 
@@ -57,7 +57,7 @@ public class WinMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level 3");
 
-        //endPanel.setActive(false)
+        //endPanel.setActive(false);
 
     }
 
@@ -65,7 +65,7 @@ public class WinMenu : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
 
-        //endPanel.setActive(false)
+        //endPanel.setActive(false);
 
     }
 
