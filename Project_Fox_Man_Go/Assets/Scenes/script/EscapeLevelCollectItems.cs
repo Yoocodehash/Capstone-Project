@@ -10,6 +10,7 @@ public class EscapeLevelCollectItems : MonoBehaviour
 
     [SerializeField] AudioSource collectSound;
 
+    public GameObject winMenu;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,8 @@ public class EscapeLevelCollectItems : MonoBehaviour
             //win condition
             if (collectables == 113)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                winMenu.SetActive(true);
             }
 
         }
