@@ -37,7 +37,7 @@ public class CollectItems : MonoBehaviour
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 //winMenu.WinGame();
                 winMenu.SetActive(true);
-                //Time.timeScale = 0f;
+                Time.timeScale = 0f;
             }
 
         }

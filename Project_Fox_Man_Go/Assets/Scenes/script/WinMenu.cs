@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
-
 public class WinMenu : MonoBehaviour
 {
 
@@ -24,15 +23,10 @@ public class WinMenu : MonoBehaviour
         
     }
 
-
-
-    
     public void WinGame()
     {
-
         winPanel.SetActive(true);
         winPanel.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "You Win!";
-
     }
 
 
