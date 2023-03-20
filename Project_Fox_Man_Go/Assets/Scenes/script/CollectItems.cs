@@ -10,8 +10,8 @@ public class CollectItems : MonoBehaviour
 
     [SerializeField] AudioSource collectSound;
 
-    public WinMenu winMenu;
-
+    // public WinMenu winMenu;
+    public GameObject winMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +35,8 @@ public class CollectItems : MonoBehaviour
             if(collectables == 2)
             {
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                winMenu.WinGame();
+                //winMenu.WinGame();
+                winMenu.SetActive(true);
             }
 
         }
