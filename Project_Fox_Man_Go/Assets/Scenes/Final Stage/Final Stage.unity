@@ -15232,6 +15232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collectables: 1
   collectSound: {fileID: 1566971616}
+  winMenu: {fileID: 0}
 --- !u!82 &1566971616
 AudioSource:
   m_ObjectHideFlags: 0
