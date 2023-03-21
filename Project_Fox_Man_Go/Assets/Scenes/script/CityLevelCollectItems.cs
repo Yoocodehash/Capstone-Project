@@ -33,7 +33,7 @@ public class CityLevelCollectItems : MonoBehaviour
             collectSound.Play();
 
             //win condition
-            if (collectables == 1)//15
+            if (collectables == 15)//15
             {
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 winMenu.SetActive(true);

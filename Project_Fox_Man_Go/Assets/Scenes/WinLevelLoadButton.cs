@@ -39,4 +39,9 @@ public class WinLevelLoadButton : MonoBehaviour
         SceneManager.LoadScene("ThanksForPlaying");
     }
 
+    public void LoadEndlessRunnerLevel()
+    {
+        SceneManager.LoadScene("Final Stage");
+    }
+
 }
