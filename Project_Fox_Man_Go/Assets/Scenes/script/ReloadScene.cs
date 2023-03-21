@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ReloadScene : MonoBehaviour
 {
+   
+
     void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("Player"))
+         if (col.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }

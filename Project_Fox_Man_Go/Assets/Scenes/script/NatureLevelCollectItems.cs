@@ -33,7 +33,7 @@ public class NatureLevelCollectItems : MonoBehaviour
             collectSound.Play();
 
             //win condition
-            if (collectables == 207)
+            if (collectables == 207)//207
             {
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 winMenu.SetActive(true);

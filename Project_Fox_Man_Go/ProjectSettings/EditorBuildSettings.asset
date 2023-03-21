@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lab_level.unity
     guid: 3adeb09d897c2d643be4cd7ef860557e
+  - enabled: 0
+    path: Assets/Scenes/ThankYou.unity
+    guid: a978461e66eb21c41b48164db874773b
+  - enabled: 1
+    path: Assets/Scenes/ThanksForPlaying.unity
+    guid: 7e2e291516941b344b6c1a4c53730dba
   m_configObjects: {}

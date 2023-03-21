@@ -32,7 +32,7 @@ public class EscapeLevelCollectItems : MonoBehaviour
             collectSound.Play();
 
             //win condition
-            if (collectables == 1)//1
+            if (collectables == 113)//1
             {
                 //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 winMenu.SetActive(true);
