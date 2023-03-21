@@ -10,6 +10,8 @@ public class NatureLevelCollectItems : MonoBehaviour
 
     [SerializeField] AudioSource collectSound;
 
+    public GameObject winMenu;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +35,8 @@ public class NatureLevelCollectItems : MonoBehaviour
             //win condition
             if (collectables == 207)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                winMenu.SetActive(true);
             }
 
         }

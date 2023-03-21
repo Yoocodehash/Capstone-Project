@@ -34,4 +34,9 @@ public class WinLevelLoadButton : MonoBehaviour
 
     }
 
+    public void LoadThankYouScene()
+    {
+        SceneManager.LoadScene("ThanksForPlaying");
+    }
+
 }
