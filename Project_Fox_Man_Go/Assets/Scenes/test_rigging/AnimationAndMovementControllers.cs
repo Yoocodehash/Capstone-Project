@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class AnimationAndMovementControllers : MonoBehaviour
 {
+    [SerializeField] AudioSource jumpSound;
 
     // declare reference variables
     PlayerInput playerInput;
@@ -107,6 +108,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
             animator.SetInteger(jumpCountHash, jumpCount);
             currentMovement.y = initialJumpVelocities[jumpCount];
             appliedMovement.y = initialJumpVelocities[jumpCount];
+            jumpSound.Play();
         }
         else if (!isJumpPressed && isJumping && characterController.isGrounded)
         {
@@ -123,6 +125,7 @@ public class AnimationAndMovementControllers : MonoBehaviour
     void onJump(InputAction.CallbackContext context)
     {
         isJumpPressed = context.ReadValueAsButton();
+       
     }
 
     void onRun(InputAction.CallbackContext context)
