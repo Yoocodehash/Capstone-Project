@@ -8,11 +8,8 @@ public class WinReplayButton : MonoBehaviour
 
     public void ReplayLevel()
     {
-        //SceneManager.LoadScene("New Helath");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //endPanel.setActive(false);
 
     }
-
 
 }

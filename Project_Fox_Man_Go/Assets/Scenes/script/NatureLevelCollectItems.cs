@@ -18,7 +18,6 @@ public class NatureLevelCollectItems : MonoBehaviour
         
     }
 
-
     public void OnTriggerEnter(Collider Collectable)
     {
         if (Collectable.gameObject.tag == "Collectable")
@@ -33,16 +32,14 @@ public class NatureLevelCollectItems : MonoBehaviour
             collectSound.Play();
 
             //win condition
-            if (collectables == 207)//207
+            if (collectables == 207)
             {
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 winMenu.SetActive(true);
             }
 
         }
 
     }
-
 
     // Update is called once per frame
     void Update()

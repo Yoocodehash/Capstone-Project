@@ -18,7 +18,6 @@ public class EscapeLevelCollectItems : MonoBehaviour
         
     }
 
-
     public void OnTriggerEnter(Collider Collectable)
     {
         if (Collectable.gameObject.tag == "Collectable")
@@ -32,9 +31,8 @@ public class EscapeLevelCollectItems : MonoBehaviour
             collectSound.Play();
 
             //win condition
-            if (collectables == 113)//1
+            if (collectables == 113)
             {
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 winMenu.SetActive(true);
             }
 

@@ -9,8 +9,6 @@ public class WinMainMenuButton : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-        //endPanel.setActive(false);
-
     }
 
 }

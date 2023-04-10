@@ -32,19 +32,6 @@ public class LevelSelect : MonoBehaviour
         SceneManager.LoadScene("Final Stage");
     }
 
-    /*
-    public void EndingTextCutscene()
-    {
-        //SceneManager.LoadScene("Lab_level");
-    }
-
-    public void BeginningTextCutscene()
-    {
-
-    }
-
-    */
-
     public void Quit()
     {
         Application.Quit();
