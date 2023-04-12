@@ -3173,7 +3173,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    Nature'
+    Nature''s
+
+    Level'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -28850,7 +28852,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696244258}
-  m_LocalRotation: {x: 0.11722874, y: 0.0001171097, z: -0.000013823939, w: 0.99310493}
+  m_LocalRotation: {x: 0.11722874, y: 0.00011710116, z: -0.000013822932, w: 0.99310493}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -37152,7 +37154,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905745311}
-  m_LocalRotation: {x: 0.15322584, y: 0.00011655893, z: -0.000018073264, w: 0.9881912}
+  m_LocalRotation: {x: 0.15322587, y: 0.000116526004, z: -0.000018068165, w: 0.9881912}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
